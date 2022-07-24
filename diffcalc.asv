@@ -5,9 +5,11 @@ clc
 files = dir('10_cm')
 fig = figure;
 len = length(files);
-colormap hot
+colormap summer
 for i=3:len
+    
     if contains(files(i).name, '_SM')
+        
         %Fetching 10CM
         path_10cm = strcat('./10_cm/', files(i).name);
         festmap_10cm=dlmread(path_10cm,'',6,0);
