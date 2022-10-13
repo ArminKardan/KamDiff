@@ -1,3 +1,4 @@
 /publish.exe
 /publisher.exe
 /node_modules/*
+/push.exe
